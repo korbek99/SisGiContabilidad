@@ -1,0 +1,159 @@
+﻿<%@ Master Language="VB" AutoEventWireup="true" CodeBehind="Site.master.vb" Inherits="SisGiCont.SiteMaster" %>
+<!doctype html>
+<html lang=''>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/stylesM.css" rel="stylesheet" />
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="Scripts/script.js"></script>
+   <title>Menu Principal</title>
+</head>
+
+<body>
+     <form id="Form1" runat="server">
+<div id="container">
+		<div id="header">
+        	<h1>Sistema<span class="off">GI</span></h1>
+            <h2>Sistema GI | Contabilidad</h2>
+        </div>   
+        
+        <div id="menu">
+        <li class="menuitem"><a href="#">Usuario : Jose David Bustos H</a></li>
+        <li class="menuitem"><a href="#"> ( Administrador ) </a></li>
+        	<%--<ul>
+            	<li class="menuitem"><a href="#">Home</a></li>
+                <li class="menuitem"><a href="#">About</a></li>
+                <li class="menuitem"><a href="#">Products</a></li>
+                <li class="menuitem"><a href="#">Services</a></li>
+                <li class="menuitem"><a href="#">Design</a></li>
+              <li class="menuitem"><a href="#">Contact</a></li>
+            </ul>--%>
+        </div>
+        
+        <div id="leftmenu">
+
+        <div id="leftmenu_top"></div>
+  
+   
+                <div id='cssmenu'>
+                        <ul>
+                           <%--<li><a href='#'><span>Maestros</span></a></li>--%>
+                           <li class='active has-sub'><a href='#'><span>Maestros</span></a>
+                              <ul>
+                                 <li><a href="SC_Maestros/Clientes/ListClientes.aspx"><span>Clientes</span></a>
+                                   <%-- <ul>
+                                       <li><a href='#'><span>Sub Product</span></a></li>
+                                       <li class='last'><a href='#'><span>Sub Product</span></a></li>
+                                    </ul>--%>
+                                 </li>
+                                 <li ><a href='SC_Maestros/ClientesExter/ListClientesExt.aspx'><span>Clientes Exportación</span></a></li>
+                                 <li ><a href='SC_Maestros/Proveedores/ListaProvee.aspx'><span>Proveedores</span></a></li>
+                                 <li ><a href='SC_Maestros/Bancos/ListaBanco.aspx'><span>Bancos</span></a></li>
+                                 <li ><a href='SC_Maestros/Salud/ListaSalud.aspx'><span>Salud</span></a></li>
+                                 <li ><a href='SC_Maestros/AFP/ListaAFP.aspx'><span>AFP</span></a></li>
+                                 <li ><a href='SC_Maestros/AreaTrabajo/ListaArea.aspx'><span>Area Trabajo</span></a></li>
+                                 <li ><a href='SC_Maestros/TipoDocumento/ListaTipoDoc.aspx'><span>Tipo Documento</span></a></li>
+                                 <li ><a href='SC_Maestros/FichaPersonal/ListaFicha.aspx'><span>Ficha Personal</span></a></li>
+                                 <li class='last'><a href='SC_Maestros/BaseCurricular/ListaBase.aspx'><span>Base Curriculum</span></a></li>
+                              </ul>
+                           </li>
+                           <li  class='active has-sub'><a href='#'><span>Doc. Cobrar Electronico</span></a>
+                               <ul>
+                                       <li><a href='#'><span>Factura Afecta</span></a></li>
+                                       <li><a href='#'><span>Factura Exenta</span></a></li>
+                                       <li class='last'><a href='#'><span>Factura Exportacion</span></a></li>
+                               </ul>
+                           
+                           </li>
+                           <li  class='active has-sub'><a href='#'><span>Doc. Pagar</span></a>
+                           
+                                <ul>
+                                       <li><a href='#'><span>Boleta Recividas</span></a></li>
+                                       <li><a href='#'><span>Factura Afecta</span></a></li>
+                                       <li><a href='#'><span>Factura Exenta</span></a></li>
+                                       <li class='last'><a href='#'><span>Cheques a Pagar</span></a></li>
+                               </ul>
+                           
+                           </li>
+                           <li  class='active has-sub'><a href='#'><span>Nota Credito</span></a>
+                           
+                                 <ul>
+                                       <li><a href='#'><span>Nota Credito Emitidas</span></a></li>
+                                       <li class='last'><a href='#'><span>Nota Credito Recibidas</span></a></li>
+                               </ul>
+                           
+                           </li>
+                           <li   class='active has-sub'><a href='#'><span>Remuneraciones</span></a>
+                                <ul>
+                                      <%-- <li><a href='#'><span></span></a></li>--%>
+                                       <li class='last'><a href='#'><span>Remuneraciones</span></a></li>
+                               </ul>
+                           
+                           </li>
+                           <li   class='active has-sub'><a href="#">Rendicion Fondos</a>
+                           
+                                  <ul>
+                                      <%-- <li><a href='#'><span></span></a></li>--%>
+                                       <li class='last'><a href="SC_FondosPorRendir/ListaFPR.aspx"><span>Fondos por Rendir</span></a></li>
+                               </ul>
+                           </li>
+                            <li   class='active has-sub'><a href="#">Tarjetas de Tiempos</a>
+                               <ul>
+                                      <%-- <li><a href='#'><span></span></a></li>--%>
+                                       <li class='last'><a href='#'><span>Tarjeta Tiempo</span></a></li>
+                               </ul>
+                            
+                            </li>
+                            <li  class='active has-sub'><a href="#">Ordenes Compras</a>
+                                  <ul>
+                                      <%-- <li><a href='#'><span></span></a></li>--%>
+                                       <li class='last'><a href='#'><span>Orden Compra</span></a></li>
+                               </ul>
+                            
+                            </li>
+                            <li  class='active has-sub'><a href="#">Revision</a>
+                              <ul>
+                                     <li><a href='#'><span>Contabilidad</span></a></li>
+                                       <li class='last'><a href='#'><span>Otros Informes</span></a></li>
+                               </ul>
+                            
+                            </li>
+                           <li class='active has-sub'><a href='#'><span>Mov. Financiero</span></a>
+                             <ul>
+                                      <%-- <li><a href='#'><span></span></a></li>--%>
+                                       <li class='last'><a href='#'><span>Mov. Financiero</span></a></li>
+                               </ul>
+                           
+                           </li>
+                            <li class='last'><a href='#'><span></span></a></li>
+                        </ul>
+               </div>
+              <div id="leftmenu_bottom"></div>
+        </div>
+
+		<div id="content">
+        
+        
+        <div id="content_top"></div>
+
+        <div id="content_main">
+         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+      
+        </div>
+        <div id="content_bottom"></div>
+            
+            <div id="footer"><h3><a href=""></a></h3></div>
+      </div>
+   </div>
+
+</form>
+</body>
+</html>
+
+
+

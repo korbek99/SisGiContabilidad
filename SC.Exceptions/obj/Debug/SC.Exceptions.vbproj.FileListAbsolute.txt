@@ -1,0 +1,16 @@
+C:\Users\Jose\Documents\Visual Studio 2012\Projects\SisGiCont\SC.Exceptions\bin\Debug\SC.Exceptions.dll
+C:\Users\Jose\Documents\Visual Studio 2012\Projects\SisGiCont\SC.Exceptions\bin\Debug\SC.Exceptions.pdb
+C:\Users\Jose\Documents\Visual Studio 2012\Projects\SisGiCont\SC.Exceptions\bin\Debug\SC.Exceptions.xml
+C:\Users\Jose\Documents\Visual Studio 2012\Projects\SisGiCont\SC.Exceptions\obj\Debug\SC.Exceptions.Resources.resources
+C:\Users\Jose\Documents\Visual Studio 2012\Projects\SisGiCont\SC.Exceptions\obj\Debug\SC.Exceptions.vbproj.GenerateResource.Cache
+C:\Users\Jose\Documents\Visual Studio 2012\Projects\SisGiCont\SC.Exceptions\obj\Debug\SC.Exceptions.dll
+C:\Users\Jose\Documents\Visual Studio 2012\Projects\SisGiCont\SC.Exceptions\obj\Debug\SC.Exceptions.xml
+C:\Users\Jose\Documents\Visual Studio 2012\Projects\SisGiCont\SC.Exceptions\obj\Debug\SC.Exceptions.pdb
+C:\Users\korbek99\Documents\SisGiCont\SC.Exceptions\bin\Debug\SC.Exceptions.dll
+C:\Users\korbek99\Documents\SisGiCont\SC.Exceptions\bin\Debug\SC.Exceptions.pdb
+C:\Users\korbek99\Documents\SisGiCont\SC.Exceptions\bin\Debug\SC.Exceptions.xml
+C:\Users\korbek99\Documents\SisGiCont\SC.Exceptions\obj\Debug\SC.Exceptions.Resources.resources
+C:\Users\korbek99\Documents\SisGiCont\SC.Exceptions\obj\Debug\SC.Exceptions.vbproj.GenerateResource.Cache
+C:\Users\korbek99\Documents\SisGiCont\SC.Exceptions\obj\Debug\SC.Exceptions.dll
+C:\Users\korbek99\Documents\SisGiCont\SC.Exceptions\obj\Debug\SC.Exceptions.xml
+C:\Users\korbek99\Documents\SisGiCont\SC.Exceptions\obj\Debug\SC.Exceptions.pdb

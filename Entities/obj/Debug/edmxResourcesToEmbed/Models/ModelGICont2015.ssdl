@@ -1,0 +1,1015 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GICont2015Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="GIC_AFP">
+    <Key>
+      <PropertyRef Name="AfpID" />
+    </Key>
+    <Property Name="AfpID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AfpNombre" Type="varchar" MaxLength="60" />
+    <Property Name="Activo" Type="int" />
+  </EntityType>
+  <EntityType Name="GIC_AreaTrabajo">
+    <Key>
+      <PropertyRef Name="AreaTrabID" />
+    </Key>
+    <Property Name="AreaTrabID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AreaTrabNombre" Type="varchar" MaxLength="60" />
+    <Property Name="Activo" Type="int" />
+  </EntityType>
+  <EntityType Name="GIC_Banco">
+    <Key>
+      <PropertyRef Name="BancoID" />
+    </Key>
+    <Property Name="BancoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BancoNombre" Type="varchar" MaxLength="60" />
+    <Property Name="Activo" Type="int" />
+  </EntityType>
+  <EntityType Name="GIC_BaseCurriculum">
+    <Key>
+      <PropertyRef Name="BaseCVID" />
+    </Key>
+    <Property Name="BaseCVID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BaseCVNombre" Type="varchar" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="GIC_Ciudad">
+    <Key>
+      <PropertyRef Name="CiudadID" />
+    </Key>
+    <Property Name="CiudadID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CiudadNombre" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="RegionID" Type="int" Nullable="false" />
+    <Property Name="Activo" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GIC_Cliente">
+    <Key>
+      <PropertyRef Name="ClienteID" />
+    </Key>
+    <Property Name="ClienteID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClienteDesc" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="ClienteRUT" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ClienteDireccion" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="ComunaID" Type="int" Nullable="false" />
+    <Property Name="CiudadID" Type="int" Nullable="false" />
+    <Property Name="ClienteContacto" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="GiroID" Type="int" Nullable="false" />
+    <Property Name="ClienteTelefono" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ClienteFax" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ClienteCelular" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ClienteCorreoElectronico" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ClienteSitioWeb" Type="varchar" MaxLength="100" />
+    <Property Name="ClienteApartadoPostal" Type="varchar" MaxLength="100" />
+    <Property Name="Activo" Type="smallint" Nullable="false" />
+    <Property Name="ExcluirDeOportunidades" Type="smallint" />
+    <Property Name="RegionID" Type="int" />
+    <Property Name="FormaDePagoID" Type="int" />
+    <Property Name="Otros" Type="varchar" MaxLength="400" />
+    <Property Name="Logo" Type="image" />
+    <Property Name="TamanoEmpresa" Type="int" />
+    <Property Name="TipoEmpID" Type="int" />
+  </EntityType>
+  <EntityType Name="GIC_Comuna">
+    <Key>
+      <PropertyRef Name="ComunaID" />
+    </Key>
+    <Property Name="ComunaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProvinciaID" Type="int" Nullable="false" />
+    <Property Name="ComunaNombre" Type="char" MaxLength="50" Nullable="false" />
+    <Property Name="Activo" Type="int" />
+  </EntityType>
+  <EntityType Name="GIC_CuentasContable">
+    <Key>
+      <PropertyRef Name="CuentaContaID" />
+    </Key>
+    <Property Name="CuentaContaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CuentaContaDescripcion" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Activo" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GIC_EstadosFondoPorRendir">
+    <Key>
+      <PropertyRef Name="EstadoFPRID" />
+    </Key>
+    <Property Name="EstadoFPRID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EstadosFondoPorRendir" Type="varchar" MaxLength="60" />
+    <Property Name="EstadosFondoObservacion" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="GIC_FichaPersonal">
+    <Key>
+      <PropertyRef Name="FichaPersonalID" />
+    </Key>
+    <Property Name="FichaPersonalID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FichaPersonalNombre" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="FichaPersonalRUT" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FichaPersonalFechaNac" Type="date" />
+    <Property Name="FichaPersonalEdad" Type="int" />
+    <Property Name="FichaPersonalEstCivil" Type="int" />
+    <Property Name="FichaPersonalNacionalidad" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FichaPersonalDireccion" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="ComunaID" Type="int" Nullable="false" />
+    <Property Name="CiudadID" Type="int" Nullable="false" />
+    <Property Name="FichaPersonalEstudios" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="FichaPersonalTelefono" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="FichaPersonalCelular" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="FichaPersonalTelEmerg" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="FichaPersonalCorreo" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FichaPersonalLicencia" Type="bit" />
+    <Property Name="AfpID" Type="int" Nullable="false" />
+    <Property Name="Costizacion" Type="int" Nullable="false" />
+    <Property Name="SaludID" Type="int" Nullable="false" />
+    <Property Name="CostoIsapre" Type="int" Nullable="false" />
+    <Property Name="BancoID" Type="int" Nullable="false" />
+    <Property Name="FichaPersonalCuentaCorriente" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FichaPersonalRecomendado" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Otros" Type="varchar" MaxLength="400" Nullable="false" />
+    <Property Name="FechaInicioContrato" Type="date" Nullable="false" />
+    <Property Name="FechaFinContrato" Type="date" Nullable="false" />
+    <Property Name="AreaTrabID" Type="int" Nullable="false" />
+    <Property Name="Activo" Type="smallint" Nullable="false" />
+    <Property Name="FechaIngreso" Type="date" />
+    <Property Name="SueldoBase" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Colacion" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Prestamos" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Anticipos" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="APV" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="AhorroVoluntario" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Beneficios" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="FotoPersonal" Type="image" />
+    <Property Name="RutPersonal" Type="image" />
+    <Property Name="FirmaPersonal" Type="image" />
+  </EntityType>
+  <EntityType Name="GIC_FichaPersonal_CuentasCorrientes">
+    <Key>
+      <PropertyRef Name="PersonalCuCoID" />
+    </Key>
+    <Property Name="PersonalCuCoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FichaPersonalID" Type="int" Nullable="false" />
+    <Property Name="BancoID" Type="int" Nullable="false" />
+    <Property Name="PersonalCuentasCorrientes" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="GIC_FichaPersonal_Documentos">
+    <Key>
+      <PropertyRef Name="FichaPersonalDoc" />
+    </Key>
+    <Property Name="FichaPersonalDoc" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FichaPersonalID" Type="int" Nullable="false" />
+    <Property Name="FichaPersonalDocumento" Type="image" />
+    <Property Name="FichaPersonalDescripcion" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="GIC_FichaPersonalHistorico">
+    <Key>
+      <PropertyRef Name="FichaPersonalHistoricoID" />
+    </Key>
+    <Property Name="FichaPersonalHistoricoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FechaIngresoHistorico" Type="date" />
+    <Property Name="FichaPersonalID" Type="int" Nullable="false" />
+    <Property Name="FichaPersonalNombre" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="FichaPersonalRUT" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FichaPersonalFechaNac" Type="date" />
+    <Property Name="FichaPersonalEdad" Type="int" />
+    <Property Name="FichaPersonalEstCivil" Type="int" />
+    <Property Name="FichaPersonalNacionalidad" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FichaPersonalDireccion" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="ComunaID" Type="int" Nullable="false" />
+    <Property Name="CiudadID" Type="int" Nullable="false" />
+    <Property Name="FichaPersonalEstudios" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="FichaPersonalTelefono" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="FichaPersonalCelular" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="FichaPersonalTelEmerg" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="FichaPersonalCorreo" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FichaPersonalLicencia" Type="bit" />
+    <Property Name="AfpID" Type="int" />
+    <Property Name="Costizacion" Type="int" />
+    <Property Name="SaludID" Type="int" />
+    <Property Name="CostoIsapre" Type="int" />
+    <Property Name="BancoID" Type="int" />
+    <Property Name="FichaPersonalCuentaCorriente" Type="varchar" MaxLength="100" />
+    <Property Name="FichaPersonalRecomendado" Type="varchar" MaxLength="100" />
+    <Property Name="Otros" Type="varchar" MaxLength="400" />
+    <Property Name="FechaInicioContrato" Type="date" />
+    <Property Name="FechaFinContrato" Type="date" />
+    <Property Name="AreaTrabID" Type="int" />
+    <Property Name="Activo" Type="smallint" Nullable="false" />
+    <Property Name="FechaIngreso" Type="date" />
+    <Property Name="SueldoBase" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Colacion" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Prestamos" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Anticipos" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="APV" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="AhorroVoluntario" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Beneficios" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="FotoPersonal" Type="image" />
+    <Property Name="RutPersonal" Type="image" />
+    <Property Name="FirmaPersonal" Type="image" />
+    <Property Name="UsuarioID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GIC_FondoPorRendir">
+    <Key>
+      <PropertyRef Name="FPRID" />
+    </Key>
+    <Property Name="FPRID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FichaPersonalID" Type="int" Nullable="false" />
+    <Property Name="SubCuentaID" Type="int" Nullable="false" />
+    <Property Name="CuentaContaID" Type="int" Nullable="false" />
+    <Property Name="FPRMontoAsignado" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="FPRDescripcion" Type="varchar" MaxLength="100" />
+    <Property Name="FPRMontoGastado" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="FPRSaldoActual" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="FPRFechaIngreso" Type="date" />
+    <Property Name="FPRImagenSolicitud" Type="image" />
+    <Property Name="FPRImagenTransDestinatario" Type="image" />
+    <Property Name="FPRImagenRendicion" Type="image" />
+    <Property Name="FPRImagenTransSaldo" Type="image" />
+    <Property Name="EstadoFPRID" Type="int" Nullable="false" />
+    <Property Name="FPRSubTotal" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="FPRTotal" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="UsuarioID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GIC_FondoPorRendirDetalle">
+    <Key>
+      <PropertyRef Name="FPRDetalleID" />
+    </Key>
+    <Property Name="FPRDetalleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FPRID" Type="int" Nullable="false" />
+    <Property Name="FPRFechaIngresoDetalle" Type="date" />
+    <Property Name="FPRDescripcionDetalle" Type="varchar" MaxLength="100" />
+    <Property Name="FPRNumeroDocumento" Type="int" Nullable="false" />
+    <Property Name="FPRTareasID" Type="int" Nullable="false" />
+    <Property Name="Tasa" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="Total" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GIC_FondoPorRendirImagenRendicionExt">
+    <Key>
+      <PropertyRef Name="FPRImgExtID" />
+    </Key>
+    <Property Name="FPRImgExtID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FPRID" Type="int" Nullable="false" />
+    <Property Name="FPRImagenRendicion" Type="image" Nullable="false" />
+    <Property Name="FPRFechaIngreso" Type="date" />
+  </EntityType>
+  <EntityType Name="GIC_FondoPorRendirTareas">
+    <Key>
+      <PropertyRef Name="FPRTareasID" />
+    </Key>
+    <Property Name="FPRTareasID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FPRTareasDescripcion" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="GIC_FormaDePago">
+    <Key>
+      <PropertyRef Name="FormaDePagoID" />
+    </Key>
+    <Property Name="FormaDePagoID" Type="int" Nullable="false" />
+    <Property Name="FormaDePagoDesc" Type="varchar" MaxLength="300" />
+    <Property Name="Orden" Type="int" />
+    <Property Name="Activo" Type="int" />
+  </EntityType>
+  <EntityType Name="GIC_FormaDePagoProveedor">
+    <Key>
+      <PropertyRef Name="FormaDePagoProvID" />
+    </Key>
+    <Property Name="FormaDePagoProvID" Type="int" Nullable="false" />
+    <Property Name="FormaDePagoDesc" Type="varchar" MaxLength="300" />
+    <Property Name="Activo" Type="int" />
+  </EntityType>
+  <EntityType Name="GIC_Giro">
+    <Key>
+      <PropertyRef Name="GiroID" />
+    </Key>
+    <Property Name="GiroID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GiroNombre" Type="varchar" MaxLength="60" />
+    <Property Name="Activo" Type="int" />
+    <Property Name="GiroCliente" Type="bit" />
+    <Property Name="GiroProveedor" Type="bit" />
+  </EntityType>
+  <EntityType Name="GIC_Pais">
+    <Key>
+      <PropertyRef Name="PaisID" />
+    </Key>
+    <Property Name="PaisID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PaisNombre" Type="varchar" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="GIC_Proveedor">
+    <Key>
+      <PropertyRef Name="ProveedorID" />
+    </Key>
+    <Property Name="ProveedorID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProveedorDesc" Type="varchar" MaxLength="300" />
+    <Property Name="ProveedorRUT" Type="varchar" MaxLength="50" />
+    <Property Name="ProveedorDireccion" Type="varchar" MaxLength="300" />
+    <Property Name="ComunaID" Type="int" />
+    <Property Name="CiudadID" Type="int" />
+    <Property Name="ProveedorContacto" Type="varchar" MaxLength="300" />
+    <Property Name="GiroID" Type="int" />
+    <Property Name="ProveedorTelefono" Type="varchar" MaxLength="20" />
+    <Property Name="ProveedorFax" Type="varchar" MaxLength="20" />
+    <Property Name="ProveedorCelular" Type="varchar" MaxLength="20" />
+    <Property Name="ProveedorCorreoElectronico" Type="varchar" MaxLength="100" />
+    <Property Name="ProveedorSitioWeb" Type="varchar" MaxLength="100" />
+    <Property Name="ProveedorApartadoPostal" Type="varchar" MaxLength="100" />
+    <Property Name="Otros" Type="varchar" MaxLength="400" />
+    <Property Name="TipoProveID" Type="int" />
+    <Property Name="Logo" Type="image" />
+    <Property Name="BancoID" Type="int" Nullable="false" />
+    <Property Name="ProveedorCuenCorriente" Type="varchar" MaxLength="100" />
+    <Property Name="ProveedorContactos" Type="varchar" MaxLength="200" />
+    <Property Name="Activo" Type="smallint" />
+    <Property Name="RegionID" Type="int" />
+    <Property Name="FormaDePagoProvID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GIC_Proveedor_Contactos">
+    <Key>
+      <PropertyRef Name="ProveContactoID" />
+    </Key>
+    <Property Name="ProveContactoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProveedorID" Type="int" Nullable="false" />
+    <Property Name="ProveedorContacto" Type="varchar" MaxLength="400" />
+    <Property Name="ProveedorContactoCorreo" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="GIC_Proveedor_CuentasCorrientes">
+    <Key>
+      <PropertyRef Name="ProveCuCoID" />
+    </Key>
+    <Property Name="ProveCuCoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProveedorID" Type="int" Nullable="false" />
+    <Property Name="BancoID" Type="int" Nullable="false" />
+    <Property Name="ProveedorCuentasCorrientes" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="GIC_Provincia">
+    <Key>
+      <PropertyRef Name="ProvinciaID" />
+    </Key>
+    <Property Name="ProvinciaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RegionID" Type="int" Nullable="false" />
+    <Property Name="ProvinciaNombre" Type="char" MaxLength="50" Nullable="false" />
+    <Property Name="Capital" Type="char" MaxLength="50" />
+    <Property Name="Activo" Type="int" />
+  </EntityType>
+  <EntityType Name="GIC_Region">
+    <Key>
+      <PropertyRef Name="RegionID" />
+    </Key>
+    <Property Name="RegionID" Type="int" Nullable="false" />
+    <Property Name="Region_numero_romano" Type="char" MaxLength="4" Nullable="false" />
+    <Property Name="RegionNombre" Type="char" MaxLength="50" Nullable="false" />
+    <Property Name="Capital" Type="char" MaxLength="50" />
+    <Property Name="Activo" Type="int" />
+    <Property Name="PaisID" Type="int" />
+  </EntityType>
+  <EntityType Name="GIC_Salud">
+    <Key>
+      <PropertyRef Name="SaludID" />
+    </Key>
+    <Property Name="SaludID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SaludNombre" Type="varchar" MaxLength="60" />
+    <Property Name="Activo" Type="int" />
+  </EntityType>
+  <EntityType Name="GIC_SubCuentas">
+    <Key>
+      <PropertyRef Name="SubCuentaID" />
+    </Key>
+    <Property Name="SubCuentaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CuentaContaID" Type="int" Nullable="false" />
+    <Property Name="SubCuentaNumero" Type="int" Nullable="false" />
+    <Property Name="SubCuentaNombre" Type="varchar" MaxLength="200" />
+    <Property Name="SubCuentaDescripcion" Type="varchar" MaxLength="500" />
+    <Property Name="SubCuentaFechaIng" Type="date" Nullable="false" />
+    <Property Name="ClienteID" Type="int" Nullable="false" />
+    <Property Name="SubCuentaOfertaRefID" Type="int" Nullable="false" />
+    <Property Name="SubCuentaEstado" Type="int" Nullable="false" />
+    <Property Name="SubCuentasGradoID" Type="int" Nullable="false" />
+    <Property Name="UsuarioID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GIC_SubCuentasDetalle">
+    <Key>
+      <PropertyRef Name="SubCuentaDetalleID" />
+    </Key>
+    <Property Name="SubCuentaDetalleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SubCuentaID" Type="int" Nullable="false" />
+    <Property Name="NumeroEEPP" Type="int" Nullable="false" />
+    <Property Name="DescripcionEstadoPago" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="FechaEEPP" Type="date" Nullable="false" />
+    <Property Name="MonedaEEPP" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="MontoEEPP" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="ImpuestoEEPP" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="TotalEEPP" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GIC_SubCuentasGradoSatisfaccion">
+    <Key>
+      <PropertyRef Name="SubCuentasGradoID" />
+    </Key>
+    <Property Name="SubCuentasGradoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SubCuentasGradoSatisfDescrip" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GIC_TipoDocumento">
+    <Key>
+      <PropertyRef Name="TipoDocID" />
+    </Key>
+    <Property Name="TipoDocID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TipoDocumentoNombre" Type="varchar" MaxLength="60" />
+    <Property Name="Activo" Type="int" />
+  </EntityType>
+  <EntityType Name="GIC_TipoEmpresa">
+    <Key>
+      <PropertyRef Name="TipoEmpID" />
+    </Key>
+    <Property Name="TipoEmpID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TipoEmpresaNombre" Type="varchar" MaxLength="60" />
+    <Property Name="Activo" Type="int" />
+  </EntityType>
+  <EntityType Name="GIC_TipoProveedor">
+    <Key>
+      <PropertyRef Name="TipoProveID" />
+    </Key>
+    <Property Name="TipoProveID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TipoProveedorNombre" Type="varchar" MaxLength="60" />
+    <Property Name="Activo" Type="int" />
+  </EntityType>
+  <EntityType Name="GIC_Usuarios">
+    <Key>
+      <PropertyRef Name="UsuarioID" />
+    </Key>
+    <Property Name="UsuarioID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Usuario" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="UsuarioNombreCompleto" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="UsuarioPass" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="UsuarioAccesoGrabar" Type="bit" Nullable="false" />
+    <Property Name="UsuarioAccesoMod" Type="bit" Nullable="false" />
+    <Property Name="UsuarioAccesoDel" Type="bit" Nullable="false" />
+    <Property Name="UsuarioAccesoConsultor" Type="bit" Nullable="false" />
+    <Property Name="Activo" Type="smallint" Nullable="false" />
+    <Property Name="UsuarioFechaIngreso" Type="date" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_GI_Ciudad_GI_Region">
+    <End Role="GIC_Region" Type="Self.GIC_Region" Multiplicity="1" />
+    <End Role="GIC_Ciudad" Type="Self.GIC_Ciudad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_Region">
+        <PropertyRef Name="RegionID" />
+      </Principal>
+      <Dependent Role="GIC_Ciudad">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_Cliente_GI_Ciudad">
+    <End Role="GIC_Ciudad" Type="Self.GIC_Ciudad" Multiplicity="1" />
+    <End Role="GIC_Cliente" Type="Self.GIC_Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_Ciudad">
+        <PropertyRef Name="CiudadID" />
+      </Principal>
+      <Dependent Role="GIC_Cliente">
+        <PropertyRef Name="CiudadID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_Cliente_GI_Comuna">
+    <End Role="GIC_Comuna" Type="Self.GIC_Comuna" Multiplicity="1" />
+    <End Role="GIC_Cliente" Type="Self.GIC_Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_Comuna">
+        <PropertyRef Name="ComunaID" />
+      </Principal>
+      <Dependent Role="GIC_Cliente">
+        <PropertyRef Name="ComunaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_Cliente_GI_Giro">
+    <End Role="GIC_Giro" Type="Self.GIC_Giro" Multiplicity="1" />
+    <End Role="GIC_Cliente" Type="Self.GIC_Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_Giro">
+        <PropertyRef Name="GiroID" />
+      </Principal>
+      <Dependent Role="GIC_Cliente">
+        <PropertyRef Name="GiroID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_comunas_GI_provincias">
+    <End Role="GIC_Provincia" Type="Self.GIC_Provincia" Multiplicity="1" />
+    <End Role="GIC_Comuna" Type="Self.GIC_Comuna" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_Provincia">
+        <PropertyRef Name="ProvinciaID" />
+      </Principal>
+      <Dependent Role="GIC_Comuna">
+        <PropertyRef Name="ProvinciaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_FichaPersonal_AFP">
+    <End Role="GIC_AFP" Type="Self.GIC_AFP" Multiplicity="1" />
+    <End Role="GIC_FichaPersonal" Type="Self.GIC_FichaPersonal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_AFP">
+        <PropertyRef Name="AfpID" />
+      </Principal>
+      <Dependent Role="GIC_FichaPersonal">
+        <PropertyRef Name="AfpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_FichaPersonal_AreaTrabajo">
+    <End Role="GIC_AreaTrabajo" Type="Self.GIC_AreaTrabajo" Multiplicity="1" />
+    <End Role="GIC_FichaPersonal" Type="Self.GIC_FichaPersonal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_AreaTrabajo">
+        <PropertyRef Name="AreaTrabID" />
+      </Principal>
+      <Dependent Role="GIC_FichaPersonal">
+        <PropertyRef Name="AreaTrabID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_FichaPersonal_Banco">
+    <End Role="GIC_Banco" Type="Self.GIC_Banco" Multiplicity="1" />
+    <End Role="GIC_FichaPersonal" Type="Self.GIC_FichaPersonal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_Banco">
+        <PropertyRef Name="BancoID" />
+      </Principal>
+      <Dependent Role="GIC_FichaPersonal">
+        <PropertyRef Name="BancoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_FichaPersonal_Comuna">
+    <End Role="GIC_Comuna" Type="Self.GIC_Comuna" Multiplicity="1" />
+    <End Role="GIC_FichaPersonal" Type="Self.GIC_FichaPersonal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_Comuna">
+        <PropertyRef Name="ComunaID" />
+      </Principal>
+      <Dependent Role="GIC_FichaPersonal">
+        <PropertyRef Name="ComunaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_FichaPersonal_Salud">
+    <End Role="GIC_Salud" Type="Self.GIC_Salud" Multiplicity="1" />
+    <End Role="GIC_FichaPersonal" Type="Self.GIC_FichaPersonal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_Salud">
+        <PropertyRef Name="SaludID" />
+      </Principal>
+      <Dependent Role="GIC_FichaPersonal">
+        <PropertyRef Name="SaludID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_Proveedor_GI_Banco">
+    <End Role="GIC_Banco" Type="Self.GIC_Banco" Multiplicity="1" />
+    <End Role="GIC_Proveedor" Type="Self.GIC_Proveedor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_Banco">
+        <PropertyRef Name="BancoID" />
+      </Principal>
+      <Dependent Role="GIC_Proveedor">
+        <PropertyRef Name="BancoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_Proveedor_GI_Ciudad">
+    <End Role="GIC_Ciudad" Type="Self.GIC_Ciudad" Multiplicity="0..1" />
+    <End Role="GIC_Proveedor" Type="Self.GIC_Proveedor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_Ciudad">
+        <PropertyRef Name="CiudadID" />
+      </Principal>
+      <Dependent Role="GIC_Proveedor">
+        <PropertyRef Name="CiudadID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_Proveedor_GI_Comuna">
+    <End Role="GIC_Comuna" Type="Self.GIC_Comuna" Multiplicity="0..1" />
+    <End Role="GIC_Proveedor" Type="Self.GIC_Proveedor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_Comuna">
+        <PropertyRef Name="ComunaID" />
+      </Principal>
+      <Dependent Role="GIC_Proveedor">
+        <PropertyRef Name="ComunaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_Proveedor_GI_FormaDePago">
+    <End Role="GIC_FormaDePagoProveedor" Type="Self.GIC_FormaDePagoProveedor" Multiplicity="1" />
+    <End Role="GIC_Proveedor" Type="Self.GIC_Proveedor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_FormaDePagoProveedor">
+        <PropertyRef Name="FormaDePagoProvID" />
+      </Principal>
+      <Dependent Role="GIC_Proveedor">
+        <PropertyRef Name="FormaDePagoProvID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_Proveedor_GI_Giro">
+    <End Role="GIC_Giro" Type="Self.GIC_Giro" Multiplicity="0..1" />
+    <End Role="GIC_Proveedor" Type="Self.GIC_Proveedor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_Giro">
+        <PropertyRef Name="GiroID" />
+      </Principal>
+      <Dependent Role="GIC_Proveedor">
+        <PropertyRef Name="GiroID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_provincias_GI_regiones">
+    <End Role="GIC_Region" Type="Self.GIC_Region" Multiplicity="1" />
+    <End Role="GIC_Provincia" Type="Self.GIC_Provincia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_Region">
+        <PropertyRef Name="RegionID" />
+      </Principal>
+      <Dependent Role="GIC_Provincia">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_SubCuentas_Cliente">
+    <End Role="GIC_Cliente" Type="Self.GIC_Cliente" Multiplicity="1" />
+    <End Role="GIC_SubCuentas" Type="Self.GIC_SubCuentas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_Cliente">
+        <PropertyRef Name="ClienteID" />
+      </Principal>
+      <Dependent Role="GIC_SubCuentas">
+        <PropertyRef Name="ClienteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_SubCuentas_CuentaContable">
+    <End Role="GIC_CuentasContable" Type="Self.GIC_CuentasContable" Multiplicity="1" />
+    <End Role="GIC_SubCuentas" Type="Self.GIC_SubCuentas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_CuentasContable">
+        <PropertyRef Name="CuentaContaID" />
+      </Principal>
+      <Dependent Role="GIC_SubCuentas">
+        <PropertyRef Name="CuentaContaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_SubCuentas_Satisfaccion">
+    <End Role="GIC_SubCuentasGradoSatisfaccion" Type="Self.GIC_SubCuentasGradoSatisfaccion" Multiplicity="1" />
+    <End Role="GIC_SubCuentas" Type="Self.GIC_SubCuentas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_SubCuentasGradoSatisfaccion">
+        <PropertyRef Name="SubCuentasGradoID" />
+      </Principal>
+      <Dependent Role="GIC_SubCuentas">
+        <PropertyRef Name="SubCuentasGradoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GI_SubCuentasDetalle_SubCuentas">
+    <End Role="GIC_SubCuentas" Type="Self.GIC_SubCuentas" Multiplicity="1" />
+    <End Role="GIC_SubCuentasDetalle" Type="Self.GIC_SubCuentasDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_SubCuentas">
+        <PropertyRef Name="SubCuentaID" />
+      </Principal>
+      <Dependent Role="GIC_SubCuentasDetalle">
+        <PropertyRef Name="SubCuentaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GIC_Cliente_GIC_FormaDePago">
+    <End Role="GIC_FormaDePago" Type="Self.GIC_FormaDePago" Multiplicity="0..1" />
+    <End Role="GIC_Cliente" Type="Self.GIC_Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_FormaDePago">
+        <PropertyRef Name="FormaDePagoID" />
+      </Principal>
+      <Dependent Role="GIC_Cliente">
+        <PropertyRef Name="FormaDePagoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GIC_Cliente_GIC_TipoEmpresa">
+    <End Role="GIC_TipoEmpresa" Type="Self.GIC_TipoEmpresa" Multiplicity="0..1" />
+    <End Role="GIC_Cliente" Type="Self.GIC_Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_TipoEmpresa">
+        <PropertyRef Name="TipoEmpID" />
+      </Principal>
+      <Dependent Role="GIC_Cliente">
+        <PropertyRef Name="TipoEmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GIC_FichaPersonal_CuentasCorrientes_GIC_FichaPersonal">
+    <End Role="GIC_FichaPersonal" Type="Self.GIC_FichaPersonal" Multiplicity="1" />
+    <End Role="GIC_FichaPersonal_CuentasCorrientes" Type="Self.GIC_FichaPersonal_CuentasCorrientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_FichaPersonal">
+        <PropertyRef Name="FichaPersonalID" />
+      </Principal>
+      <Dependent Role="GIC_FichaPersonal_CuentasCorrientes">
+        <PropertyRef Name="FichaPersonalID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GIC_FichaPersonal_Documentos_GIC_FichaPersonal">
+    <End Role="GIC_FichaPersonal" Type="Self.GIC_FichaPersonal" Multiplicity="1" />
+    <End Role="GIC_FichaPersonal_Documentos" Type="Self.GIC_FichaPersonal_Documentos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_FichaPersonal">
+        <PropertyRef Name="FichaPersonalID" />
+      </Principal>
+      <Dependent Role="GIC_FichaPersonal_Documentos">
+        <PropertyRef Name="FichaPersonalID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GIC_FondoPorRendir_CuentasContable">
+    <End Role="GIC_CuentasContable" Type="Self.GIC_CuentasContable" Multiplicity="1" />
+    <End Role="GIC_FondoPorRendir" Type="Self.GIC_FondoPorRendir" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_CuentasContable">
+        <PropertyRef Name="CuentaContaID" />
+      </Principal>
+      <Dependent Role="GIC_FondoPorRendir">
+        <PropertyRef Name="CuentaContaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GIC_FondoPorRendir_Detalle">
+    <End Role="GIC_FondoPorRendir" Type="Self.GIC_FondoPorRendir" Multiplicity="1" />
+    <End Role="GIC_FondoPorRendirDetalle" Type="Self.GIC_FondoPorRendirDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_FondoPorRendir">
+        <PropertyRef Name="FPRID" />
+      </Principal>
+      <Dependent Role="GIC_FondoPorRendirDetalle">
+        <PropertyRef Name="FPRID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GIC_FondoPorRendir_Estados">
+    <End Role="GIC_EstadosFondoPorRendir" Type="Self.GIC_EstadosFondoPorRendir" Multiplicity="1" />
+    <End Role="GIC_FondoPorRendir" Type="Self.GIC_FondoPorRendir" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_EstadosFondoPorRendir">
+        <PropertyRef Name="EstadoFPRID" />
+      </Principal>
+      <Dependent Role="GIC_FondoPorRendir">
+        <PropertyRef Name="EstadoFPRID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GIC_FondoPorRendir_FichaPersonal">
+    <End Role="GIC_FichaPersonal" Type="Self.GIC_FichaPersonal" Multiplicity="1" />
+    <End Role="GIC_FondoPorRendir" Type="Self.GIC_FondoPorRendir" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_FichaPersonal">
+        <PropertyRef Name="FichaPersonalID" />
+      </Principal>
+      <Dependent Role="GIC_FondoPorRendir">
+        <PropertyRef Name="FichaPersonalID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GIC_FondoPorRendir_ImagenRendicionExt">
+    <End Role="GIC_FondoPorRendir" Type="Self.GIC_FondoPorRendir" Multiplicity="1" />
+    <End Role="GIC_FondoPorRendirImagenRendicionExt" Type="Self.GIC_FondoPorRendirImagenRendicionExt" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_FondoPorRendir">
+        <PropertyRef Name="FPRID" />
+      </Principal>
+      <Dependent Role="GIC_FondoPorRendirImagenRendicionExt">
+        <PropertyRef Name="FPRID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GIC_FondoPorRendir_SubCuentas">
+    <End Role="GIC_SubCuentas" Type="Self.GIC_SubCuentas" Multiplicity="1" />
+    <End Role="GIC_FondoPorRendir" Type="Self.GIC_FondoPorRendir" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_SubCuentas">
+        <PropertyRef Name="SubCuentaID" />
+      </Principal>
+      <Dependent Role="GIC_FondoPorRendir">
+        <PropertyRef Name="SubCuentaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GIC_FondoPorRendir_Tareas">
+    <End Role="GIC_FondoPorRendirTareas" Type="Self.GIC_FondoPorRendirTareas" Multiplicity="1" />
+    <End Role="GIC_FondoPorRendirDetalle" Type="Self.GIC_FondoPorRendirDetalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_FondoPorRendirTareas">
+        <PropertyRef Name="FPRTareasID" />
+      </Principal>
+      <Dependent Role="GIC_FondoPorRendirDetalle">
+        <PropertyRef Name="FPRTareasID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GIC_Proveedor_CuentasCorrientes_GIC_Proveedor">
+    <End Role="GIC_Proveedor" Type="Self.GIC_Proveedor" Multiplicity="1" />
+    <End Role="GIC_Proveedor_CuentasCorrientes" Type="Self.GIC_Proveedor_CuentasCorrientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_Proveedor">
+        <PropertyRef Name="ProveedorID" />
+      </Principal>
+      <Dependent Role="GIC_Proveedor_CuentasCorrientes">
+        <PropertyRef Name="ProveedorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_RegionPais">
+    <End Role="GIC_Pais" Type="Self.GIC_Pais" Multiplicity="0..1" />
+    <End Role="GIC_Region" Type="Self.GIC_Region" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GIC_Pais">
+        <PropertyRef Name="PaisID" />
+      </Principal>
+      <Dependent Role="GIC_Region">
+        <PropertyRef Name="PaisID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GICont2015ModelStoreContainer">
+    <EntitySet Name="GIC_AFP" EntityType="Self.GIC_AFP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_AreaTrabajo" EntityType="Self.GIC_AreaTrabajo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_Banco" EntityType="Self.GIC_Banco" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_BaseCurriculum" EntityType="Self.GIC_BaseCurriculum" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_Ciudad" EntityType="Self.GIC_Ciudad" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_Cliente" EntityType="Self.GIC_Cliente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_Comuna" EntityType="Self.GIC_Comuna" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_CuentasContable" EntityType="Self.GIC_CuentasContable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_EstadosFondoPorRendir" EntityType="Self.GIC_EstadosFondoPorRendir" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_FichaPersonal" EntityType="Self.GIC_FichaPersonal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_FichaPersonal_CuentasCorrientes" EntityType="Self.GIC_FichaPersonal_CuentasCorrientes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_FichaPersonal_Documentos" EntityType="Self.GIC_FichaPersonal_Documentos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_FichaPersonalHistorico" EntityType="Self.GIC_FichaPersonalHistorico" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_FondoPorRendir" EntityType="Self.GIC_FondoPorRendir" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_FondoPorRendirDetalle" EntityType="Self.GIC_FondoPorRendirDetalle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_FondoPorRendirImagenRendicionExt" EntityType="Self.GIC_FondoPorRendirImagenRendicionExt" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_FondoPorRendirTareas" EntityType="Self.GIC_FondoPorRendirTareas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_FormaDePago" EntityType="Self.GIC_FormaDePago" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_FormaDePagoProveedor" EntityType="Self.GIC_FormaDePagoProveedor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_Giro" EntityType="Self.GIC_Giro" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_Pais" EntityType="Self.GIC_Pais" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_Proveedor" EntityType="Self.GIC_Proveedor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_Proveedor_Contactos" EntityType="Self.GIC_Proveedor_Contactos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_Proveedor_CuentasCorrientes" EntityType="Self.GIC_Proveedor_CuentasCorrientes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_Provincia" EntityType="Self.GIC_Provincia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_Region" EntityType="Self.GIC_Region" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_Salud" EntityType="Self.GIC_Salud" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_SubCuentas" EntityType="Self.GIC_SubCuentas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_SubCuentasDetalle" EntityType="Self.GIC_SubCuentasDetalle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_SubCuentasGradoSatisfaccion" EntityType="Self.GIC_SubCuentasGradoSatisfaccion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_TipoDocumento" EntityType="Self.GIC_TipoDocumento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_TipoEmpresa" EntityType="Self.GIC_TipoEmpresa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_TipoProveedor" EntityType="Self.GIC_TipoProveedor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GIC_Usuarios" EntityType="Self.GIC_Usuarios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_GI_Ciudad_GI_Region" Association="Self.FK_GI_Ciudad_GI_Region">
+      <End Role="GIC_Region" EntitySet="GIC_Region" />
+      <End Role="GIC_Ciudad" EntitySet="GIC_Ciudad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_Cliente_GI_Ciudad" Association="Self.FK_GI_Cliente_GI_Ciudad">
+      <End Role="GIC_Ciudad" EntitySet="GIC_Ciudad" />
+      <End Role="GIC_Cliente" EntitySet="GIC_Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_Cliente_GI_Comuna" Association="Self.FK_GI_Cliente_GI_Comuna">
+      <End Role="GIC_Comuna" EntitySet="GIC_Comuna" />
+      <End Role="GIC_Cliente" EntitySet="GIC_Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_Cliente_GI_Giro" Association="Self.FK_GI_Cliente_GI_Giro">
+      <End Role="GIC_Giro" EntitySet="GIC_Giro" />
+      <End Role="GIC_Cliente" EntitySet="GIC_Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_comunas_GI_provincias" Association="Self.FK_GI_comunas_GI_provincias">
+      <End Role="GIC_Provincia" EntitySet="GIC_Provincia" />
+      <End Role="GIC_Comuna" EntitySet="GIC_Comuna" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_FichaPersonal_AFP" Association="Self.FK_GI_FichaPersonal_AFP">
+      <End Role="GIC_AFP" EntitySet="GIC_AFP" />
+      <End Role="GIC_FichaPersonal" EntitySet="GIC_FichaPersonal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_FichaPersonal_AreaTrabajo" Association="Self.FK_GI_FichaPersonal_AreaTrabajo">
+      <End Role="GIC_AreaTrabajo" EntitySet="GIC_AreaTrabajo" />
+      <End Role="GIC_FichaPersonal" EntitySet="GIC_FichaPersonal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_FichaPersonal_Banco" Association="Self.FK_GI_FichaPersonal_Banco">
+      <End Role="GIC_Banco" EntitySet="GIC_Banco" />
+      <End Role="GIC_FichaPersonal" EntitySet="GIC_FichaPersonal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_FichaPersonal_Comuna" Association="Self.FK_GI_FichaPersonal_Comuna">
+      <End Role="GIC_Comuna" EntitySet="GIC_Comuna" />
+      <End Role="GIC_FichaPersonal" EntitySet="GIC_FichaPersonal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_FichaPersonal_Salud" Association="Self.FK_GI_FichaPersonal_Salud">
+      <End Role="GIC_Salud" EntitySet="GIC_Salud" />
+      <End Role="GIC_FichaPersonal" EntitySet="GIC_FichaPersonal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_Proveedor_GI_Banco" Association="Self.FK_GI_Proveedor_GI_Banco">
+      <End Role="GIC_Banco" EntitySet="GIC_Banco" />
+      <End Role="GIC_Proveedor" EntitySet="GIC_Proveedor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_Proveedor_GI_Ciudad" Association="Self.FK_GI_Proveedor_GI_Ciudad">
+      <End Role="GIC_Ciudad" EntitySet="GIC_Ciudad" />
+      <End Role="GIC_Proveedor" EntitySet="GIC_Proveedor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_Proveedor_GI_Comuna" Association="Self.FK_GI_Proveedor_GI_Comuna">
+      <End Role="GIC_Comuna" EntitySet="GIC_Comuna" />
+      <End Role="GIC_Proveedor" EntitySet="GIC_Proveedor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_Proveedor_GI_FormaDePago" Association="Self.FK_GI_Proveedor_GI_FormaDePago">
+      <End Role="GIC_FormaDePagoProveedor" EntitySet="GIC_FormaDePagoProveedor" />
+      <End Role="GIC_Proveedor" EntitySet="GIC_Proveedor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_Proveedor_GI_Giro" Association="Self.FK_GI_Proveedor_GI_Giro">
+      <End Role="GIC_Giro" EntitySet="GIC_Giro" />
+      <End Role="GIC_Proveedor" EntitySet="GIC_Proveedor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_provincias_GI_regiones" Association="Self.FK_GI_provincias_GI_regiones">
+      <End Role="GIC_Region" EntitySet="GIC_Region" />
+      <End Role="GIC_Provincia" EntitySet="GIC_Provincia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_SubCuentas_Cliente" Association="Self.FK_GI_SubCuentas_Cliente">
+      <End Role="GIC_Cliente" EntitySet="GIC_Cliente" />
+      <End Role="GIC_SubCuentas" EntitySet="GIC_SubCuentas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_SubCuentas_CuentaContable" Association="Self.FK_GI_SubCuentas_CuentaContable">
+      <End Role="GIC_CuentasContable" EntitySet="GIC_CuentasContable" />
+      <End Role="GIC_SubCuentas" EntitySet="GIC_SubCuentas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_SubCuentas_Satisfaccion" Association="Self.FK_GI_SubCuentas_Satisfaccion">
+      <End Role="GIC_SubCuentasGradoSatisfaccion" EntitySet="GIC_SubCuentasGradoSatisfaccion" />
+      <End Role="GIC_SubCuentas" EntitySet="GIC_SubCuentas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GI_SubCuentasDetalle_SubCuentas" Association="Self.FK_GI_SubCuentasDetalle_SubCuentas">
+      <End Role="GIC_SubCuentas" EntitySet="GIC_SubCuentas" />
+      <End Role="GIC_SubCuentasDetalle" EntitySet="GIC_SubCuentasDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GIC_Cliente_GIC_FormaDePago" Association="Self.FK_GIC_Cliente_GIC_FormaDePago">
+      <End Role="GIC_FormaDePago" EntitySet="GIC_FormaDePago" />
+      <End Role="GIC_Cliente" EntitySet="GIC_Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GIC_Cliente_GIC_TipoEmpresa" Association="Self.FK_GIC_Cliente_GIC_TipoEmpresa">
+      <End Role="GIC_TipoEmpresa" EntitySet="GIC_TipoEmpresa" />
+      <End Role="GIC_Cliente" EntitySet="GIC_Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GIC_FichaPersonal_CuentasCorrientes_GIC_FichaPersonal" Association="Self.FK_GIC_FichaPersonal_CuentasCorrientes_GIC_FichaPersonal">
+      <End Role="GIC_FichaPersonal" EntitySet="GIC_FichaPersonal" />
+      <End Role="GIC_FichaPersonal_CuentasCorrientes" EntitySet="GIC_FichaPersonal_CuentasCorrientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GIC_FichaPersonal_Documentos_GIC_FichaPersonal" Association="Self.FK_GIC_FichaPersonal_Documentos_GIC_FichaPersonal">
+      <End Role="GIC_FichaPersonal" EntitySet="GIC_FichaPersonal" />
+      <End Role="GIC_FichaPersonal_Documentos" EntitySet="GIC_FichaPersonal_Documentos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GIC_FondoPorRendir_CuentasContable" Association="Self.FK_GIC_FondoPorRendir_CuentasContable">
+      <End Role="GIC_CuentasContable" EntitySet="GIC_CuentasContable" />
+      <End Role="GIC_FondoPorRendir" EntitySet="GIC_FondoPorRendir" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GIC_FondoPorRendir_Detalle" Association="Self.FK_GIC_FondoPorRendir_Detalle">
+      <End Role="GIC_FondoPorRendir" EntitySet="GIC_FondoPorRendir" />
+      <End Role="GIC_FondoPorRendirDetalle" EntitySet="GIC_FondoPorRendirDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GIC_FondoPorRendir_Estados" Association="Self.FK_GIC_FondoPorRendir_Estados">
+      <End Role="GIC_EstadosFondoPorRendir" EntitySet="GIC_EstadosFondoPorRendir" />
+      <End Role="GIC_FondoPorRendir" EntitySet="GIC_FondoPorRendir" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GIC_FondoPorRendir_FichaPersonal" Association="Self.FK_GIC_FondoPorRendir_FichaPersonal">
+      <End Role="GIC_FichaPersonal" EntitySet="GIC_FichaPersonal" />
+      <End Role="GIC_FondoPorRendir" EntitySet="GIC_FondoPorRendir" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GIC_FondoPorRendir_ImagenRendicionExt" Association="Self.FK_GIC_FondoPorRendir_ImagenRendicionExt">
+      <End Role="GIC_FondoPorRendir" EntitySet="GIC_FondoPorRendir" />
+      <End Role="GIC_FondoPorRendirImagenRendicionExt" EntitySet="GIC_FondoPorRendirImagenRendicionExt" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GIC_FondoPorRendir_SubCuentas" Association="Self.FK_GIC_FondoPorRendir_SubCuentas">
+      <End Role="GIC_SubCuentas" EntitySet="GIC_SubCuentas" />
+      <End Role="GIC_FondoPorRendir" EntitySet="GIC_FondoPorRendir" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GIC_FondoPorRendir_Tareas" Association="Self.FK_GIC_FondoPorRendir_Tareas">
+      <End Role="GIC_FondoPorRendirTareas" EntitySet="GIC_FondoPorRendirTareas" />
+      <End Role="GIC_FondoPorRendirDetalle" EntitySet="GIC_FondoPorRendirDetalle" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GIC_Proveedor_CuentasCorrientes_GIC_Proveedor" Association="Self.FK_GIC_Proveedor_CuentasCorrientes_GIC_Proveedor">
+      <End Role="GIC_Proveedor" EntitySet="GIC_Proveedor" />
+      <End Role="GIC_Proveedor_CuentasCorrientes" EntitySet="GIC_Proveedor_CuentasCorrientes" />
+    </AssociationSet>
+    <AssociationSet Name="fk_RegionPais" Association="Self.fk_RegionPais">
+      <End Role="GIC_Pais" EntitySet="GIC_Pais" />
+      <End Role="GIC_Region" EntitySet="GIC_Region" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

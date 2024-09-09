@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cc6f521b89c54de086a3d6cbec84ea20" Name="Diagrama1">
+        <EntityTypeShape EntityType="GICont2015Model.GIC_AFP" Width="1.5" PointX="11" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_AreaTrabajo" Width="1.5" PointX="11" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_Banco" Width="1.5" PointX="6" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_Cliente" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_Comuna" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_CuentasContable" Width="1.5" PointX="6" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_EstadosFondoPorRendir" Width="1.5" PointX="8.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_FichaPersonal" Width="1.5" PointX="13.25" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_FichaPersonal_CuentasCorrientes" Width="1.5" PointX="8.25" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_FichaPersonal_Documentos" Width="1.5" PointX="12.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_FichaPersonalHistorico" Width="1.5" PointX="14.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_FondoPorRendir" Width="1.5" PointX="10.5" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_FondoPorRendirDetalle" Width="1.5" PointX="12.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_FondoPorRendirImagenRendicionExt" Width="1.5" PointX="12.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_FondoPorRendirTareas" Width="1.5" PointX="10.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_FormaDePago" Width="1.5" PointX="0.75" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_FormaDePagoProveedor" Width="1.5" PointX="3.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_Giro" Width="1.5" PointX="0.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_LogErrores" Width="1.5" PointX="15.75" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_Pais" Width="1.5" PointX="1.5" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_Proveedor" Width="1.5" PointX="6" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_Proveedor_Contactos" Width="1.5" PointX="8.25" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_Proveedor_CuentasCorrientes" Width="1.5" PointX="8.25" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_Provincia" Width="1.5" PointX="1.5" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_Region" Width="1.5" PointX="1.5" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_Salud" Width="1.5" PointX="11" PointY="20.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_SubCuentas" Width="1.5" PointX="8.25" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_SubCuentasDetalle" Width="1.5" PointX="10.5" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_SubCuentasGradoSatisfaccion" Width="1.5" PointX="6" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_TipoDocumento" Width="1.5" PointX="15.75" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_TipoEmpresa" Width="1.5" PointX="0.75" PointY="24.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_TipoProveedor" Width="1.5" PointX="3.75" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.GIC_Usuarios" Width="1.5" PointX="16.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GICont2015Model.sysdiagrams" Width="1.5" PointX="16.75" PointY="5.25" IsExpanded="true" />
+        <AssociationConnector Association="GICont2015Model.FK_GI_FichaPersonal_AFP" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GI_FichaPersonal_AreaTrabajo" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GI_FichaPersonal_Banco" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GIC_FichaPersonal_CuentasCorrientes_GIC_Banco" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GIC_Proveedor_CuentasCorrientes_GIC_Banco" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GI_Cliente_GI_Comuna" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GI_SubCuentas_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GIC_Cliente_GIC_FormaDePago" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GIC_Cliente_GIC_Giro" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GIC_Cliente_GIC_TipoEmpresa" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GI_comunas_GI_provincias" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GI_FichaPersonal_Comuna" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GI_Proveedor_GI_Comuna" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GI_SubCuentas_CuentaContable" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GIC_FondoPorRendir_CuentasContable" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GIC_FondoPorRendir_Estados" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GI_FichaPersonal_Salud" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GIC_FondoPorRendir_Detalle" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GIC_FondoPorRendir_SubCuentas" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GIC_FondoPorRendirImagenRendicionExt_GIC_FondoPorRendir" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GIC_FondoPorRendir_Tareas" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GIC_Proveedor_GIC_FormaDePagoProveedor" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GIC_Proveedor_GIC_Giro" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.fk_RegionPais" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GIC_Proveedor_Contactos_GIC_Proveedor" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GIC_Proveedor_CuentasCorrientes_GIC_Proveedor" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GIC_Proveedor_GIC_TipoProveedor" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GI_provincias_GI_regiones" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GI_SubCuentas_Satisfaccion" ManuallyRouted="false" />
+        <AssociationConnector Association="GICont2015Model.FK_GI_SubCuentasDetalle_SubCuentas" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

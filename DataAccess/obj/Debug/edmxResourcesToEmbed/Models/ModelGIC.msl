@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GICont2015ModelStoreContainer" CdmEntityContainer="GICont2015Entities">
+    <EntitySetMapping Name="GIC_AFP">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_AFP">
+        <MappingFragment StoreEntitySet="GIC_AFP">
+          <ScalarProperty Name="AfpID" ColumnName="AfpID" />
+          <ScalarProperty Name="AfpNombre" ColumnName="AfpNombre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_AreaTrabajo">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_AreaTrabajo">
+        <MappingFragment StoreEntitySet="GIC_AreaTrabajo">
+          <ScalarProperty Name="AreaTrabID" ColumnName="AreaTrabID" />
+          <ScalarProperty Name="AreaTrabNombre" ColumnName="AreaTrabNombre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_Banco">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_Banco">
+        <MappingFragment StoreEntitySet="GIC_Banco">
+          <ScalarProperty Name="BancoID" ColumnName="BancoID" />
+          <ScalarProperty Name="BancoNombre" ColumnName="BancoNombre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_Cliente">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_Cliente">
+        <MappingFragment StoreEntitySet="GIC_Cliente">
+          <ScalarProperty Name="ClienteID" ColumnName="ClienteID" />
+          <ScalarProperty Name="ClienteDesc" ColumnName="ClienteDesc" />
+          <ScalarProperty Name="ClienteRUT" ColumnName="ClienteRUT" />
+          <ScalarProperty Name="ClienteDireccion" ColumnName="ClienteDireccion" />
+          <ScalarProperty Name="ComunaID" ColumnName="ComunaID" />
+          <ScalarProperty Name="CiudadID" ColumnName="CiudadID" />
+          <ScalarProperty Name="ClienteContacto" ColumnName="ClienteContacto" />
+          <ScalarProperty Name="GiroID" ColumnName="GiroID" />
+          <ScalarProperty Name="ClienteTelefono" ColumnName="ClienteTelefono" />
+          <ScalarProperty Name="ClienteFax" ColumnName="ClienteFax" />
+          <ScalarProperty Name="ClienteCelular" ColumnName="ClienteCelular" />
+          <ScalarProperty Name="ClienteCorreoElectronico" ColumnName="ClienteCorreoElectronico" />
+          <ScalarProperty Name="ClienteSitioWeb" ColumnName="ClienteSitioWeb" />
+          <ScalarProperty Name="ClienteApartadoPostal" ColumnName="ClienteApartadoPostal" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="ExcluirDeOportunidades" ColumnName="ExcluirDeOportunidades" />
+          <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+          <ScalarProperty Name="FormaDePagoID" ColumnName="FormaDePagoID" />
+          <ScalarProperty Name="Otros" ColumnName="Otros" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="TamanoEmpresa" ColumnName="TamanoEmpresa" />
+          <ScalarProperty Name="TipoEmpID" ColumnName="TipoEmpID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_Comuna">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_Comuna">
+        <MappingFragment StoreEntitySet="GIC_Comuna">
+          <ScalarProperty Name="ComunaID" ColumnName="ComunaID" />
+          <ScalarProperty Name="ProvinciaID" ColumnName="ProvinciaID" />
+          <ScalarProperty Name="ComunaNombre" ColumnName="ComunaNombre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_CuentasContable">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_CuentasContable">
+        <MappingFragment StoreEntitySet="GIC_CuentasContable">
+          <ScalarProperty Name="CuentaContaID" ColumnName="CuentaContaID" />
+          <ScalarProperty Name="CuentaContaDescripcion" ColumnName="CuentaContaDescripcion" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_EstadosFondoPorRendir">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_EstadosFondoPorRendir">
+        <MappingFragment StoreEntitySet="GIC_EstadosFondoPorRendir">
+          <ScalarProperty Name="EstadoFPRID" ColumnName="EstadoFPRID" />
+          <ScalarProperty Name="EstadosFondoPorRendir" ColumnName="EstadosFondoPorRendir" />
+          <ScalarProperty Name="EstadosFondoObservacion" ColumnName="EstadosFondoObservacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_FichaPersonal">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_FichaPersonal">
+        <MappingFragment StoreEntitySet="GIC_FichaPersonal">
+          <ScalarProperty Name="FichaPersonalID" ColumnName="FichaPersonalID" />
+          <ScalarProperty Name="FichaPersonalNombre" ColumnName="FichaPersonalNombre" />
+          <ScalarProperty Name="FichaPersonalRUT" ColumnName="FichaPersonalRUT" />
+          <ScalarProperty Name="FichaPersonalFechaNac" ColumnName="FichaPersonalFechaNac" />
+          <ScalarProperty Name="FichaPersonalEdad" ColumnName="FichaPersonalEdad" />
+          <ScalarProperty Name="FichaPersonalEstCivil" ColumnName="FichaPersonalEstCivil" />
+          <ScalarProperty Name="FichaPersonalNacionalidad" ColumnName="FichaPersonalNacionalidad" />
+          <ScalarProperty Name="FichaPersonalDireccion" ColumnName="FichaPersonalDireccion" />
+          <ScalarProperty Name="ComunaID" ColumnName="ComunaID" />
+          <ScalarProperty Name="CiudadID" ColumnName="CiudadID" />
+          <ScalarProperty Name="FichaPersonalEstudios" ColumnName="FichaPersonalEstudios" />
+          <ScalarProperty Name="FichaPersonalTelefono" ColumnName="FichaPersonalTelefono" />
+          <ScalarProperty Name="FichaPersonalCelular" ColumnName="FichaPersonalCelular" />
+          <ScalarProperty Name="FichaPersonalTelEmerg" ColumnName="FichaPersonalTelEmerg" />
+          <ScalarProperty Name="FichaPersonalCorreo" ColumnName="FichaPersonalCorreo" />
+          <ScalarProperty Name="FichaPersonalLicencia" ColumnName="FichaPersonalLicencia" />
+          <ScalarProperty Name="AfpID" ColumnName="AfpID" />
+          <ScalarProperty Name="Costizacion" ColumnName="Costizacion" />
+          <ScalarProperty Name="SaludID" ColumnName="SaludID" />
+          <ScalarProperty Name="CostoIsapre" ColumnName="CostoIsapre" />
+          <ScalarProperty Name="BancoID" ColumnName="BancoID" />
+          <ScalarProperty Name="FichaPersonalCuentaCorriente" ColumnName="FichaPersonalCuentaCorriente" />
+          <ScalarProperty Name="FichaPersonalRecomendado" ColumnName="FichaPersonalRecomendado" />
+          <ScalarProperty Name="Otros" ColumnName="Otros" />
+          <ScalarProperty Name="FechaInicioContrato" ColumnName="FechaInicioContrato" />
+          <ScalarProperty Name="FechaFinContrato" ColumnName="FechaFinContrato" />
+          <ScalarProperty Name="AreaTrabID" ColumnName="AreaTrabID" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+          <ScalarProperty Name="SueldoBase" ColumnName="SueldoBase" />
+          <ScalarProperty Name="Colacion" ColumnName="Colacion" />
+          <ScalarProperty Name="Prestamos" ColumnName="Prestamos" />
+          <ScalarProperty Name="Anticipos" ColumnName="Anticipos" />
+          <ScalarProperty Name="APV" ColumnName="APV" />
+          <ScalarProperty Name="AhorroVoluntario" ColumnName="AhorroVoluntario" />
+          <ScalarProperty Name="Beneficios" ColumnName="Beneficios" />
+          <ScalarProperty Name="FotoPersonal" ColumnName="FotoPersonal" />
+          <ScalarProperty Name="RutPersonal" ColumnName="RutPersonal" />
+          <ScalarProperty Name="FirmaPersonal" ColumnName="FirmaPersonal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_FichaPersonal_CuentasCorrientes">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_FichaPersonal_CuentasCorrientes">
+        <MappingFragment StoreEntitySet="GIC_FichaPersonal_CuentasCorrientes">
+          <ScalarProperty Name="PersonalCuCoID" ColumnName="PersonalCuCoID" />
+          <ScalarProperty Name="FichaPersonalID" ColumnName="FichaPersonalID" />
+          <ScalarProperty Name="BancoID" ColumnName="BancoID" />
+          <ScalarProperty Name="PersonalCuentasCorrientes" ColumnName="PersonalCuentasCorrientes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_FichaPersonal_Documentos">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_FichaPersonal_Documentos">
+        <MappingFragment StoreEntitySet="GIC_FichaPersonal_Documentos">
+          <ScalarProperty Name="FichaPersonalDoc" ColumnName="FichaPersonalDoc" />
+          <ScalarProperty Name="FichaPersonalID" ColumnName="FichaPersonalID" />
+          <ScalarProperty Name="FichaPersonalDocumento" ColumnName="FichaPersonalDocumento" />
+          <ScalarProperty Name="FichaPersonalDescripcion" ColumnName="FichaPersonalDescripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_FichaPersonalHistorico">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_FichaPersonalHistorico">
+        <MappingFragment StoreEntitySet="GIC_FichaPersonalHistorico">
+          <ScalarProperty Name="FichaPersonalHistoricoID" ColumnName="FichaPersonalHistoricoID" />
+          <ScalarProperty Name="FechaIngresoHistorico" ColumnName="FechaIngresoHistorico" />
+          <ScalarProperty Name="FichaPersonalID" ColumnName="FichaPersonalID" />
+          <ScalarProperty Name="FichaPersonalNombre" ColumnName="FichaPersonalNombre" />
+          <ScalarProperty Name="FichaPersonalRUT" ColumnName="FichaPersonalRUT" />
+          <ScalarProperty Name="FichaPersonalFechaNac" ColumnName="FichaPersonalFechaNac" />
+          <ScalarProperty Name="FichaPersonalEdad" ColumnName="FichaPersonalEdad" />
+          <ScalarProperty Name="FichaPersonalEstCivil" ColumnName="FichaPersonalEstCivil" />
+          <ScalarProperty Name="FichaPersonalNacionalidad" ColumnName="FichaPersonalNacionalidad" />
+          <ScalarProperty Name="FichaPersonalDireccion" ColumnName="FichaPersonalDireccion" />
+          <ScalarProperty Name="ComunaID" ColumnName="ComunaID" />
+          <ScalarProperty Name="CiudadID" ColumnName="CiudadID" />
+          <ScalarProperty Name="FichaPersonalEstudios" ColumnName="FichaPersonalEstudios" />
+          <ScalarProperty Name="FichaPersonalTelefono" ColumnName="FichaPersonalTelefono" />
+          <ScalarProperty Name="FichaPersonalCelular" ColumnName="FichaPersonalCelular" />
+          <ScalarProperty Name="FichaPersonalTelEmerg" ColumnName="FichaPersonalTelEmerg" />
+          <ScalarProperty Name="FichaPersonalCorreo" ColumnName="FichaPersonalCorreo" />
+          <ScalarProperty Name="FichaPersonalLicencia" ColumnName="FichaPersonalLicencia" />
+          <ScalarProperty Name="AfpID" ColumnName="AfpID" />
+          <ScalarProperty Name="Costizacion" ColumnName="Costizacion" />
+          <ScalarProperty Name="SaludID" ColumnName="SaludID" />
+          <ScalarProperty Name="CostoIsapre" ColumnName="CostoIsapre" />
+          <ScalarProperty Name="BancoID" ColumnName="BancoID" />
+          <ScalarProperty Name="FichaPersonalCuentaCorriente" ColumnName="FichaPersonalCuentaCorriente" />
+          <ScalarProperty Name="FichaPersonalRecomendado" ColumnName="FichaPersonalRecomendado" />
+          <ScalarProperty Name="Otros" ColumnName="Otros" />
+          <ScalarProperty Name="FechaInicioContrato" ColumnName="FechaInicioContrato" />
+          <ScalarProperty Name="FechaFinContrato" ColumnName="FechaFinContrato" />
+          <ScalarProperty Name="AreaTrabID" ColumnName="AreaTrabID" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="FechaIngreso" ColumnName="FechaIngreso" />
+          <ScalarProperty Name="SueldoBase" ColumnName="SueldoBase" />
+          <ScalarProperty Name="Colacion" ColumnName="Colacion" />
+          <ScalarProperty Name="Prestamos" ColumnName="Prestamos" />
+          <ScalarProperty Name="Anticipos" ColumnName="Anticipos" />
+          <ScalarProperty Name="APV" ColumnName="APV" />
+          <ScalarProperty Name="AhorroVoluntario" ColumnName="AhorroVoluntario" />
+          <ScalarProperty Name="Beneficios" ColumnName="Beneficios" />
+          <ScalarProperty Name="FotoPersonal" ColumnName="FotoPersonal" />
+          <ScalarProperty Name="RutPersonal" ColumnName="RutPersonal" />
+          <ScalarProperty Name="FirmaPersonal" ColumnName="FirmaPersonal" />
+          <ScalarProperty Name="UsuarioID" ColumnName="UsuarioID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_FondoPorRendir">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_FondoPorRendir">
+        <MappingFragment StoreEntitySet="GIC_FondoPorRendir">
+          <ScalarProperty Name="FPRID" ColumnName="FPRID" />
+          <ScalarProperty Name="FichaPersonalID" ColumnName="FichaPersonalID" />
+          <ScalarProperty Name="SubCuentaID" ColumnName="SubCuentaID" />
+          <ScalarProperty Name="CuentaContaID" ColumnName="CuentaContaID" />
+          <ScalarProperty Name="FPRMontoAsignado" ColumnName="FPRMontoAsignado" />
+          <ScalarProperty Name="FPRDescripcion" ColumnName="FPRDescripcion" />
+          <ScalarProperty Name="FPRMontoGastado" ColumnName="FPRMontoGastado" />
+          <ScalarProperty Name="FPRSaldoActual" ColumnName="FPRSaldoActual" />
+          <ScalarProperty Name="FPRFechaIngreso" ColumnName="FPRFechaIngreso" />
+          <ScalarProperty Name="FPRImagenSolicitud" ColumnName="FPRImagenSolicitud" />
+          <ScalarProperty Name="FPRImagenTransDestinatario" ColumnName="FPRImagenTransDestinatario" />
+          <ScalarProperty Name="FPRImagenRendicion" ColumnName="FPRImagenRendicion" />
+          <ScalarProperty Name="FPRImagenTransSaldo" ColumnName="FPRImagenTransSaldo" />
+          <ScalarProperty Name="EstadoFPRID" ColumnName="EstadoFPRID" />
+          <ScalarProperty Name="FPRSubTotal" ColumnName="FPRSubTotal" />
+          <ScalarProperty Name="FPRTotal" ColumnName="FPRTotal" />
+          <ScalarProperty Name="UsuarioID" ColumnName="UsuarioID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_FondoPorRendirDetalle">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_FondoPorRendirDetalle">
+        <MappingFragment StoreEntitySet="GIC_FondoPorRendirDetalle">
+          <ScalarProperty Name="FPRDetalleID" ColumnName="FPRDetalleID" />
+          <ScalarProperty Name="FPRID" ColumnName="FPRID" />
+          <ScalarProperty Name="FPRFechaIngresoDetalle" ColumnName="FPRFechaIngresoDetalle" />
+          <ScalarProperty Name="FPRDescripcionDetalle" ColumnName="FPRDescripcionDetalle" />
+          <ScalarProperty Name="FPRNumeroDocumento" ColumnName="FPRNumeroDocumento" />
+          <ScalarProperty Name="FPRTareasID" ColumnName="FPRTareasID" />
+          <ScalarProperty Name="Tasa" ColumnName="Tasa" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_FondoPorRendirImagenRendicionExt">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_FondoPorRendirImagenRendicionExt">
+        <MappingFragment StoreEntitySet="GIC_FondoPorRendirImagenRendicionExt">
+          <ScalarProperty Name="FPRImgExtID" ColumnName="FPRImgExtID" />
+          <ScalarProperty Name="FPRID" ColumnName="FPRID" />
+          <ScalarProperty Name="FPRImagenRendicion" ColumnName="FPRImagenRendicion" />
+          <ScalarProperty Name="FPRFechaIngreso" ColumnName="FPRFechaIngreso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_FondoPorRendirTareas">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_FondoPorRendirTareas">
+        <MappingFragment StoreEntitySet="GIC_FondoPorRendirTareas">
+          <ScalarProperty Name="FPRTareasID" ColumnName="FPRTareasID" />
+          <ScalarProperty Name="FPRTareasDescripcion" ColumnName="FPRTareasDescripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_FormaDePago">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_FormaDePago">
+        <MappingFragment StoreEntitySet="GIC_FormaDePago">
+          <ScalarProperty Name="FormaDePagoID" ColumnName="FormaDePagoID" />
+          <ScalarProperty Name="FormaDePagoDesc" ColumnName="FormaDePagoDesc" />
+          <ScalarProperty Name="Orden" ColumnName="Orden" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_FormaDePagoProveedor">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_FormaDePagoProveedor">
+        <MappingFragment StoreEntitySet="GIC_FormaDePagoProveedor">
+          <ScalarProperty Name="FormaDePagoProvID" ColumnName="FormaDePagoProvID" />
+          <ScalarProperty Name="FormaDePagoDesc" ColumnName="FormaDePagoDesc" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_Giro">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_Giro">
+        <MappingFragment StoreEntitySet="GIC_Giro">
+          <ScalarProperty Name="GiroID" ColumnName="GiroID" />
+          <ScalarProperty Name="GiroNombre" ColumnName="GiroNombre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_Pais">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_Pais">
+        <MappingFragment StoreEntitySet="GIC_Pais">
+          <ScalarProperty Name="PaisID" ColumnName="PaisID" />
+          <ScalarProperty Name="PaisNombre" ColumnName="PaisNombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_Proveedor">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_Proveedor">
+        <MappingFragment StoreEntitySet="GIC_Proveedor">
+          <ScalarProperty Name="ProveedorID" ColumnName="ProveedorID" />
+          <ScalarProperty Name="ProveedorDesc" ColumnName="ProveedorDesc" />
+          <ScalarProperty Name="ProveedorRUT" ColumnName="ProveedorRUT" />
+          <ScalarProperty Name="ProveedorDireccion" ColumnName="ProveedorDireccion" />
+          <ScalarProperty Name="ComunaID" ColumnName="ComunaID" />
+          <ScalarProperty Name="CiudadID" ColumnName="CiudadID" />
+          <ScalarProperty Name="ProveedorContacto" ColumnName="ProveedorContacto" />
+          <ScalarProperty Name="GiroID" ColumnName="GiroID" />
+          <ScalarProperty Name="ProveedorTelefono" ColumnName="ProveedorTelefono" />
+          <ScalarProperty Name="ProveedorFax" ColumnName="ProveedorFax" />
+          <ScalarProperty Name="ProveedorCelular" ColumnName="ProveedorCelular" />
+          <ScalarProperty Name="ProveedorCorreoElectronico" ColumnName="ProveedorCorreoElectronico" />
+          <ScalarProperty Name="ProveedorSitioWeb" ColumnName="ProveedorSitioWeb" />
+          <ScalarProperty Name="ProveedorApartadoPostal" ColumnName="ProveedorApartadoPostal" />
+          <ScalarProperty Name="Otros" ColumnName="Otros" />
+          <ScalarProperty Name="TipoProveID" ColumnName="TipoProveID" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="BancoID" ColumnName="BancoID" />
+          <ScalarProperty Name="ProveedorCuenCorriente" ColumnName="ProveedorCuenCorriente" />
+          <ScalarProperty Name="ProveedorContactos" ColumnName="ProveedorContactos" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+          <ScalarProperty Name="FormaDePagoProvID" ColumnName="FormaDePagoProvID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_Proveedor_Contactos">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_Proveedor_Contactos">
+        <MappingFragment StoreEntitySet="GIC_Proveedor_Contactos">
+          <ScalarProperty Name="ProveContactoID" ColumnName="ProveContactoID" />
+          <ScalarProperty Name="ProveedorID" ColumnName="ProveedorID" />
+          <ScalarProperty Name="ProveedorContacto" ColumnName="ProveedorContacto" />
+          <ScalarProperty Name="ProveedorContactoCorreo" ColumnName="ProveedorContactoCorreo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_Proveedor_CuentasCorrientes">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_Proveedor_CuentasCorrientes">
+        <MappingFragment StoreEntitySet="GIC_Proveedor_CuentasCorrientes">
+          <ScalarProperty Name="ProveCuCoID" ColumnName="ProveCuCoID" />
+          <ScalarProperty Name="ProveedorID" ColumnName="ProveedorID" />
+          <ScalarProperty Name="BancoID" ColumnName="BancoID" />
+          <ScalarProperty Name="ProveedorCuentasCorrientes" ColumnName="ProveedorCuentasCorrientes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_Provincia">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_Provincia">
+        <MappingFragment StoreEntitySet="GIC_Provincia">
+          <ScalarProperty Name="ProvinciaID" ColumnName="ProvinciaID" />
+          <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+          <ScalarProperty Name="ProvinciaNombre" ColumnName="ProvinciaNombre" />
+          <ScalarProperty Name="Capital" ColumnName="Capital" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_Region">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_Region">
+        <MappingFragment StoreEntitySet="GIC_Region">
+          <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+          <ScalarProperty Name="Region_numero_romano" ColumnName="Region_numero_romano" />
+          <ScalarProperty Name="RegionNombre" ColumnName="RegionNombre" />
+          <ScalarProperty Name="Capital" ColumnName="Capital" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="PaisID" ColumnName="PaisID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_Salud">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_Salud">
+        <MappingFragment StoreEntitySet="GIC_Salud">
+          <ScalarProperty Name="SaludID" ColumnName="SaludID" />
+          <ScalarProperty Name="SaludNombre" ColumnName="SaludNombre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_SubCuentas">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_SubCuentas">
+        <MappingFragment StoreEntitySet="GIC_SubCuentas">
+          <ScalarProperty Name="SubCuentaID" ColumnName="SubCuentaID" />
+          <ScalarProperty Name="CuentaContaID" ColumnName="CuentaContaID" />
+          <ScalarProperty Name="SubCuentaNumero" ColumnName="SubCuentaNumero" />
+          <ScalarProperty Name="SubCuentaNombre" ColumnName="SubCuentaNombre" />
+          <ScalarProperty Name="SubCuentaDescripcion" ColumnName="SubCuentaDescripcion" />
+          <ScalarProperty Name="SubCuentaFechaIng" ColumnName="SubCuentaFechaIng" />
+          <ScalarProperty Name="ClienteID" ColumnName="ClienteID" />
+          <ScalarProperty Name="SubCuentaOfertaRefID" ColumnName="SubCuentaOfertaRefID" />
+          <ScalarProperty Name="SubCuentaEstado" ColumnName="SubCuentaEstado" />
+          <ScalarProperty Name="SubCuentasGradoID" ColumnName="SubCuentasGradoID" />
+          <ScalarProperty Name="UsuarioID" ColumnName="UsuarioID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_SubCuentasDetalle">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_SubCuentasDetalle">
+        <MappingFragment StoreEntitySet="GIC_SubCuentasDetalle">
+          <ScalarProperty Name="SubCuentaDetalleID" ColumnName="SubCuentaDetalleID" />
+          <ScalarProperty Name="SubCuentaID" ColumnName="SubCuentaID" />
+          <ScalarProperty Name="NumeroEEPP" ColumnName="NumeroEEPP" />
+          <ScalarProperty Name="DescripcionEstadoPago" ColumnName="DescripcionEstadoPago" />
+          <ScalarProperty Name="FechaEEPP" ColumnName="FechaEEPP" />
+          <ScalarProperty Name="MonedaEEPP" ColumnName="MonedaEEPP" />
+          <ScalarProperty Name="MontoEEPP" ColumnName="MontoEEPP" />
+          <ScalarProperty Name="ImpuestoEEPP" ColumnName="ImpuestoEEPP" />
+          <ScalarProperty Name="TotalEEPP" ColumnName="TotalEEPP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_SubCuentasGradoSatisfaccion">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_SubCuentasGradoSatisfaccion">
+        <MappingFragment StoreEntitySet="GIC_SubCuentasGradoSatisfaccion">
+          <ScalarProperty Name="SubCuentasGradoID" ColumnName="SubCuentasGradoID" />
+          <ScalarProperty Name="SubCuentasGradoSatisfDescrip" ColumnName="SubCuentasGradoSatisfDescrip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_TipoDocumento">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_TipoDocumento">
+        <MappingFragment StoreEntitySet="GIC_TipoDocumento">
+          <ScalarProperty Name="TipoDocID" ColumnName="TipoDocID" />
+          <ScalarProperty Name="TipoDocumentoNombre" ColumnName="TipoDocumentoNombre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_TipoEmpresa">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_TipoEmpresa">
+        <MappingFragment StoreEntitySet="GIC_TipoEmpresa">
+          <ScalarProperty Name="TipoEmpID" ColumnName="TipoEmpID" />
+          <ScalarProperty Name="TipoEmpresaNombre" ColumnName="TipoEmpresaNombre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIC_TipoProveedor">
+      <EntityTypeMapping TypeName="GICont2015Model.GIC_TipoProveedor">
+        <MappingFragment StoreEntitySet="GIC_TipoProveedor">
+          <ScalarProperty Name="TipoProveID" ColumnName="TipoProveID" />
+          <ScalarProperty Name="TipoProveedorNombre" ColumnName="TipoProveedorNombre" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="GICont2015Model.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
